@@ -1,0 +1,31 @@
+{
+  "name": "meey-sdk-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "node/src/index.js",
+  "scripts": {
+    "start-web": "webpack-dev-server --open --hot --inline --config web/webpack.config.js",
+    "start-node": "babel-node node/src/index.js",
+    "start-node-account": "babel-node node/src/account.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@meey-sdk-js/client": "^0.3.4",
+    "@meey-sdk-js/crypto": "^0.3.4",
+    "monaco-editor": "^0.14.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel-loader": "^8.0.2",
+    "babel-preset-env": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "regenerator-runtime": "^0.12.1",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
+  }
+}
